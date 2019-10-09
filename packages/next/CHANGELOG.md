@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.5](https://github.com/zeit/next.js/compare/v9.1.4...v9.1.5) (2019-10-09)
+
+**Note:** Version bump only for package next
+
 ## [9.1.4](https://github.com/zeit/next.js/compare/v9.1.2...v9.1.4) (2019-10-09)
 
 **Note:** Version bump only for package next
