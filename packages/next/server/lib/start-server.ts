@@ -1,11 +1,13 @@
 import http from 'http'
 import next from '../next'
 
-export default async function start(
-  serverOptions: any,
-  port?: number,
-  hostname?: string
-) {
+let start
+
+try {
+  start = require('server/start')
+} catch (e) {}
+
+start = async (serverOptions: any, port?: number, hostname?: string) => {
   const app = next(serverOptions)
   const srv = http.createServer(app.getRequestHandler())
   await new Promise((resolve, reject) => {
@@ -18,3 +20,5 @@ export default async function start(
   // is listening before starting any intensive operations.
   return app
 }
+
+export default start
